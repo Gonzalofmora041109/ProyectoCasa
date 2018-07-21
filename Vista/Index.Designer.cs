@@ -31,18 +31,18 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Index));
             this.MenuVertical = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.menuICon = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.Contenedor = new System.Windows.Forms.Panel();
             this.MenuVertical.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.menuICon)).BeginInit();
             this.SuspendLayout();
             // 
             // MenuVertical
             // 
             this.MenuVertical.BackColor = System.Drawing.Color.DarkSlateBlue;
             this.MenuVertical.Controls.Add(this.button2);
-            this.MenuVertical.Controls.Add(this.pictureBox1);
+            this.MenuVertical.Controls.Add(this.menuICon);
             this.MenuVertical.Controls.Add(this.button1);
             this.MenuVertical.Dock = System.Windows.Forms.DockStyle.Left;
             this.MenuVertical.Location = new System.Drawing.Point(0, 0);
@@ -60,23 +60,25 @@
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button2.Location = new System.Drawing.Point(0, 171);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(200, 58);
+            this.button2.Size = new System.Drawing.Size(183, 58);
             this.button2.TabIndex = 1;
             this.button2.Text = " Crear Ingreso";
             this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button2.UseVisualStyleBackColor = false;
             // 
-            // pictureBox1
+            // menuICon
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.DarkSlateBlue;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.menuICon.BackColor = System.Drawing.Color.DarkSlateBlue;
+            this.menuICon.Image = ((System.Drawing.Image)(resources.GetObject("menuICon.Image")));
+            this.menuICon.Location = new System.Drawing.Point(12, 12);
+            this.menuICon.Name = "menuICon";
+            this.menuICon.Size = new System.Drawing.Size(30, 30);
+            this.menuICon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.menuICon.TabIndex = 0;
+            this.menuICon.TabStop = false;
+            this.menuICon.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.menuICon.MouseEnter += new System.EventHandler(this.pictureBox1_MouseEnter);
+            this.menuICon.MouseLeave += new System.EventHandler(this.menuICon_MouseLeave);
             // 
             // button1
             // 
@@ -86,9 +88,9 @@
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(3, 107);
+            this.button1.Location = new System.Drawing.Point(-8, 107);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(200, 58);
+            this.button1.Size = new System.Drawing.Size(191, 58);
             this.button1.TabIndex = 0;
             this.button1.Text = "Crear Gasto";
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -123,7 +125,7 @@
             this.TransparencyKey = System.Drawing.Color.White;
             this.Load += new System.EventHandler(this.Index_Load);
             this.MenuVertical.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.menuICon)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -132,7 +134,7 @@
 
         private System.Windows.Forms.Panel MenuVertical;
         private System.Windows.Forms.Panel Contenedor;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox menuICon;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
     }

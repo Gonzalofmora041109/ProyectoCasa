@@ -64,5 +64,15 @@ namespace Vista
         {
             MostrarPanelContenedor(new IngresarGasto());
         }
+
+        private void pictureBox1_MouseEnter(object sender, EventArgs e)
+        {
+            menuICon.BackColor = Color.WhiteSmoke;
+        }
+
+        private void menuICon_MouseLeave(object sender, EventArgs e)
+        {
+            menuICon.BackColor = Color.DarkSlateBlue;
+        }
     }
 }
